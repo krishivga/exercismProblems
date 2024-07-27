@@ -6,7 +6,7 @@ export function frontDoorResponse(line) {
 
 export function frontDoorPassword(word) {
   // First, we make everything lowercase, then we make the first letter uppercase and add it back to the rest of the word.
-  return word.toLowerCase()[0].toUpperCase() + word.toLowerCase().slice(1);
+  return word[0].toUpperCase() + word.toLowerCase().slice(1);
 }
 
 export function backDoorResponse(line) {
