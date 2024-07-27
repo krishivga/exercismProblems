@@ -16,5 +16,8 @@ export function backDoorResponse(line) {
 
 export function backDoorPassword(word) {
   // Taking the first letter and making it upper case, then cutting out the rest of the word (other than the first letter) and adding it back, then adding the politeness.
-  return word[0].toUpperCase() + word.slice(1) + ", please";
+  // return word[0].toUpperCase() + word.slice(1) + ", please";
+
+  // Instead, we can implement DRY and use a previous function instead.
+  return frontDoorPassword(word) + ", please";
 }
